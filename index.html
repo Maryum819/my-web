@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aromatic Oasis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-pattern {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://placehold.co/1920x1080/4F46E5/FFFFFF?text=Aromatic%20Oasis%20Perfumes');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="p-4 md:p-6 bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-900">Aromatic Oasis</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors">Fragrances</a>
+                <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors">Our Story</a>
+                <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden p-2 text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 rounded-md">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-white shadow-lg z-40 p-4">
+        <a href="#features" class="block py-2 text-gray-700 hover:bg-gray-100 rounded-md">Fragrances</a>
+        <a href="#about" class="block py-2 text-gray-700 hover:bg-gray-100 rounded-md">Our Story</a>
+        <a href="#contact" class="block py-2 text-gray-700 hover:bg-gray-100 rounded-md">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-pattern text-white text-center py-20 md:py-32 rounded-b-3xl mx-4 my-4 md:mx-auto md:my-6 max-w-7xl">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4">
+                Find Your Signature Scent
+            </h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">
+                Discover our exquisite collection of handcrafted fragrances designed to inspire and delight.
+            </p>
+            <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                Explore Fragrances
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Unique Fragrance Collections</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto mb-12">
+                We create scents that are not just perfumes, but a reflection of your personality and style.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg transform transition-transform hover:scale-105">
+                    <div class="p-3 inline-block bg-indigo-500 text-white rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Handcrafted Blends</h3>
+                    <p class="text-gray-600">
+                        Each fragrance is carefully created by expert perfumers for a truly unique experience.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg transform transition-transform hover:scale-105">
+                    <div class="p-3 inline-block bg-indigo-500 text-white rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.4 6.5M15 4a7 7 0 0 0-4 15H9.4A7 7 0 1 1 5 11h9a6 6 0 0 0-3-9z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Natural Ingredients</h3>
+                    <p class="text-gray-600">
+                        We use high-quality, natural extracts to ensure a pure and lasting scent.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg transform transition-transform hover:scale-105">
+                    <div class="p-3 inline-block bg-indigo-500 text-white rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Cruelty-Free</h3>
+                    <p class="text-gray-600">
+                        Our commitment to ethical practices means all our products are never tested on animals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white py-16 md:py-24 rounded-t-3xl mx-4 my-4 md:mx-auto md:my-6 max-w-7xl">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Scent?</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-8">
+                Have questions or want to learn more? Send us a message and we'll get back to you.
+            </p>
+            <form class="max-w-xl mx-auto space-y-4">
+                <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <textarea placeholder="Your Message" rows="4" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-lg transition-colors">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-8 rounded-t-3xl">
+        <p>&copy; 2024 Aromatic Oasis. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for mobile menu toggle and smooth scrolling -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Optional: Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                if (window.innerWidth < 768) { // Hide mobile menu after clicking a link
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aromatic Oasis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Aromatic Oasis</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Discover Your Signature Scent</h2>
+            <p>Explore our exquisite collection of perfumes and fragrances.</p>
+            <button class="cta-button">Shop Now</button>
+        </section>
+
+        <section class="featured-products">
+            <h3>Featured Products</h3>
+            <div class="product-grid">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Aromatic Oasis. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+-----
+
+### *CSS Code (style.css)*
+
+css
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f1e9;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 1em 2em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    margin: 0;
+    font-family: serif;
+    color: #6a4c93;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 5em 2em;
+    background-color: #e6e0d2;
+}
+
+.hero h2 {
+    font-size: 3em;
+    color: #6a4c93;
+}
+
+.cta-button {
+    background-color: #6a4c93;
+    color: #fff;
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.featured-products {
+    padding: 2em;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+    margin-top: 2em;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1em;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2em;
+}
+
+
+-----
+
+### *JavaScript Code (script.js)*
+
+javascript
+document.addEventListener('DOMContentLoaded', () => {
+    const products = [
+        { name: 'Enchanted Bloom', price: '$75.00', image: 'https://via.placeholder.com/250' },
+        { name: 'Ocean Mist', price: '$68.00', image: 'https://via.placeholder.com/250' },
+        { name: 'Spiced Woods', price: '$85.00', image: 'https://via.placeholder.com/250' }
+    ];
+
+    const productGrid = document.querySelector('.product-grid');
+
+    products.forEach(product => {
+        const productCard = document.createElement('div');
+        productCard.classList.add('product-card');
+
+        productCard.innerHTML = `
+            <img src="${product.image}" alt="${product.name} perfume">
+            <h4>${product.name}</h4>
+            <p>${product.price}</p>
+            <button class="cta-button">Add to Cart</button>
+        `;
+
+        productGrid.appendChild(productCard);
+    });
+});
